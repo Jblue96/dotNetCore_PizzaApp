@@ -13,6 +13,7 @@ namespace Pizza.Models
         public string ImageThumbnailUrl { get; set; }
         public bool IsPizzaOfTheWeek { get; set; }
         public bool InStock { get; set; }
-        public virtual Category Category { get; set; } 
+        public virtual Category Category { get; set; }
 
+    }
 }

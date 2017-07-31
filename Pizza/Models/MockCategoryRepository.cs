@@ -1,25 +1,23 @@
-﻿using System;
+﻿using System.Collections.Generic;
+
 namespace Pizza.Models
 {
-    public class MockCategoryRepository
+    public class MockCategoryRepository : ICategoryRepository
     {
-        public MockCategoryRepository; ICategoryrepository
+        public IEnumerble<Category> Categories
         {
-            public IEnumerble<Category> Categories
+            get
             {
-                get
-                {
                 return new List<Category>
                     {
-                        new Category{CategoryId=1, CategoryName="Popular Pizzas", Description="All-the-time" }
-                        new Category{CategoryId=2, CategoryName="Distinct Pizzas", Description="Unique Flavor" }
+                        new Category{CategoryId=1, CategoryName="Popular Pizzas", Description="All-the-time" },
+                        new Category{CategoryId=2, CategoryName="Distinct Pizzas", Description="Unique Flavor" },
                         new Category{CategoryId=3, CategoryName="Seasonal Pizzas", Description="Octoberfest" }
 
                     };
-                }
-                    
             }
 
         }
+
     }
 }

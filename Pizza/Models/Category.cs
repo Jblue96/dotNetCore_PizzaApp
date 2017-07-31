@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Collections.Generic;
+
 namespace Pizza.Models
 {
     public class Category
@@ -6,6 +7,6 @@ namespace Pizza.Models
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
         public string Description { get; set; }
-        public List<Pizza> Pizzas { get; set}
+        public List<Pizza> Pizzas { get; set; }
     }
 }
